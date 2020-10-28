@@ -1,0 +1,32 @@
+﻿#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+	int octet1, octet2, octet3, octet4;
+	cout << "octet 1 : ";
+	cin >> octet1; 
+	
+	cout << "octet 2 : ";
+	cin >> octet2;
+	
+	cout << "octet 3 : ";
+	cin >> octet3; 
+	
+	cout << "octet 4 : ";
+	cin >> octet4; 
+
+	if (octet1 <= 255 && octet2 <= 255 && octet3 <= 255 && octet4 <= 255)
+	{
+		cout << "Ip number : " << octet1 << "." << octet2 << "." << octet3 << "." << octet4;
+	}
+	else
+	{
+		cout << "Ones or more octet > 255";
+	}
+
+	return 0;
+}
+
