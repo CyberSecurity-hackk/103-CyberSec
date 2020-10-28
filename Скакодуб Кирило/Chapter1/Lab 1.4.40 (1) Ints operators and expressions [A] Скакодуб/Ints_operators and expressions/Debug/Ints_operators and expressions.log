@@ -1,0 +1,4 @@
+﻿  Ints_operators and expressions.cpp
+C:\Users\VentusDominus\source\repos\Ints_operators and expressions\Ints_operators and expressions\Ints_operators and expressions.cpp(17,9): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\VentusDominus\source\repos\Ints_operators and expressions\Ints_operators and expressions\Ints_operators and expressions.cpp(18,9): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+  Ints_operators and expressions.vcxproj -> C:\Users\VentusDominus\source\repos\Ints_operators and expressions\Debug\Ints_operators and expressions.exe
