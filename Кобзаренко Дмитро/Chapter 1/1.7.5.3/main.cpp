@@ -1,0 +1,28 @@
+﻿#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+	int n1, n2, n3, n4;
+	cout << "Enter first number : ";
+	cin >> n1;
+	cout << "Enter second number : ";
+	cin >> n2; 
+	cout << "Enter third number : ";
+	cin >> n3; 
+	cout << "Enter fourth number : ";
+	cin >> n4; 
+
+	if (n1 <= 255 && n2 <= 255 && n3 <= 255 && n4 <= 255)
+	{
+		cout << "Ip = : " << n1 << "." << n2 << "." << n3 << "." << n4;
+	}
+	else
+	{
+		cout << "Enter correct numbers no more than 255";
+	}
+
+	return 0;
+}
