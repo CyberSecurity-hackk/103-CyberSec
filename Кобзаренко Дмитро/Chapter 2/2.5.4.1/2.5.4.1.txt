@@ -1,0 +1,43 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int action;
+	double a, b;
+
+	while(true)
+	{
+	    cout << "MENU:" << endl 
+	    << "0 - exit" << endl 
+	    << "1 - addition" << endl 
+	    << "2 - subtraction" << endl;
+	    cout << "3 - multiplication" << endl 
+	    << "4 - division" << endl 
+	    << "Your choice?" << endl;
+		cin >> action;
+		
+		if(action == 0)
+            break;
+		cout << "Enter numeric: ";
+		cin >> a;
+		cout << "Enter numeric: ";
+		cin >> b;
+		switch (action)
+		{
+            case 1:
+                cout << "Result a + b = " << a + b << endl << endl;
+                break;
+            case 2:
+                cout << "Result a - b = " << a - b << endl << endl;
+                break;
+            case 3:
+                cout << "Result a * b = " << a * b << endl << endl;
+                break;
+            case 4:
+                cout << "Result a / b = " << a / b << endl << endl;
+                break;
+            default: break;
+		}
+	}

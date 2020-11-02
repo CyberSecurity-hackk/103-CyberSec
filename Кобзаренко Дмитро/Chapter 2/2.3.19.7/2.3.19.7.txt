@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+
+{
+	int n;
+	cout<<"Enter numeral"<<endl;
+	cin>>n;
+	
+	unsigned long long answ=0, prior=0, curr=1;
+	
+	for(int i=1;i<n;i++)
+	{
+		answ=prior+curr;
+		prior = curr;
+		curr=answ;
+	}
+	
+	cout<<answ;
+	
+	return 0;
+}

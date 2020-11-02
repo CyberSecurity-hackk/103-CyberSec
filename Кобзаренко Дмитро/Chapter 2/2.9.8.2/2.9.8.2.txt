@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int banknotes[]= { 50, 20, 10, 5, 1 };
+    int customerMoney;
+    cout << "Enter the required money: ";
+    cin >> customerMoney;
+
+    for(int i = 0; customerMoney > 0;)
+    {
+        if(customerMoney >= banknotes[i])
+        {
+            customerMoney -= banknotes[i];
+            cout << banknotes[i] << ' ';
+        }
+        else ++i;
+    }
+
+    cout << endl;
+    return 0;
+}
