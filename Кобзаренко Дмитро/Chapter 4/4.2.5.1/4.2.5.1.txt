@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int K;
+	unsigned long sum=0;
+
+	cin>>K;
+	for(int i = 1; i<=K; ++i)
+		sum+=i;
+	cout<<sum;
+	
+	return 0;
+}
