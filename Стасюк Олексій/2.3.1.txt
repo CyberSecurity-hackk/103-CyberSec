@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int t, c = 0;
+
+	cout << "Enter the number: ";
+	cin >> t;
+
+	while (t != 1)
+		if (t > 0 && t != 1)
+			if (t % 2 == 0)
+			{
+				c++;
+				t = t / 2;
+				cout << t << endl;
+			}
+			else
+			{
+				c++;
+				t = 3 * t + 1;
+				cout << t << endl;
+			}
+		else
+			cout << "Error" << endl;
+
+	cout << "Steps = " << c << endl;
+}
