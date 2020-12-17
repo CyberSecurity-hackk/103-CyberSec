@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int c, v, t, y;
+	cout << "Enter 4 numbers:\n";
+	cin >> c;
+	cin >> v;
+	cin >> t;
+	cin >> y;
+
+	cout  << c << "." << v << "." << t << "." << y << endl;
+	cout << endl;
+}

@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int x, y;
+	cout << "two numbers" << endl;
+	cin >> x;
+	cin >> y;
+	float a = x;
+	float b = y;
+	if (a / b == b / a)
+		cout << "Results are equal (by 0.000001 epsilon)" << endl;
+	else
+		cout << "Results are not equal (by 0.000001 epsilon)" << endl;
+}
