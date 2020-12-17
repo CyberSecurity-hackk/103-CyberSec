@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int sys;
+	double m, ft, in;
+
+	cout << "Choose your measuring system (1 for imperial and 0 for metric): ";
+	cin >> sys;
+
+	if (sys == 1) // imperial
+	{
+		cin >> in;
+		m = in / 3.28084;
+		cout << "Your result: " << m << " m" << endl;
+	}
+	if (sys == 0) // metric
+	{
+		cin >> in;
+		ft = in * 3.28084;
+		cout << "Your result: " << ft << " ft" << endl;
+	}
+}

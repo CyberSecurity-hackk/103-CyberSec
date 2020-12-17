@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int f, x = 1;
+
+	cout << "Enter a number: ";
+	cin >> f;
+
+	for (int i = 1; i <= f; i++)
+		x *= i;
+
+	cout << "Number`s factorial = " << x << endl;
+}
