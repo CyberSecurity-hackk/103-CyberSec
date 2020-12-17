@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+long int Fib(int i)
+{
+	if (i < 1)
+		return 0;
+	if (i <= 2)
+		return 1;
+	if (i == 3)
+		return 2;
+	return Fib(i - 1) + Fib(i - 2);
+}
+int main()
+{
+	int i = 0, hk, index = -1;
+
+	cout << "Choose a number: ";
+	cin >> hk;
+
+	if (hk < 56 && hk > 0)
+	{
+		for (int i = 0; i < 56; ++i)
+		{
+			index++;
+			if (index == hk)
+				cout << Fib(i) << endl;
+		}
+	}
+	else
+		cout << "Error" << endl;
+}

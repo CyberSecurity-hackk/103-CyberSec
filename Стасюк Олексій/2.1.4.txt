@@ -1,0 +1,44 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int month, day, answer, year;
+
+	cout << "Enter the date (year, mounth, day):";
+	cin >> year;
+	cin >> month;
+	cin >> day;
+	if (month <= 12 && month > 0 && year >= 1900 && year < 2100)
+	{
+		month -= 2;
+		if (month < 0)
+		{
+			month += 12;
+			year -= 1;
+		}
+		month = (month * 83) / 32;
+		month += day;
+		month += year;
+		month += year / 4;
+		month -= year / 100;
+		month += year / 400;
+		answer = month % 7;
+		if (answer == 0)
+			cout << "Your day is Sunday" << endl;
+		if (answer == 1)
+			cout << "Your day is Monday" << endl;
+		if (answer == 2)
+			cout << "Your day is Tuesday" << endl;
+		if (answer == 3)
+			cout << "Your day is Wednesday" << endl;
+		if (answer == 4)
+			cout << "Your day is Thursday" << endl;
+		if (answer == 5)
+			cout << "Your day is Friday" << endl;
+		if (answer == 6)
+			cout << "Your day is Suttarday" << endl;
+		if (answer < 0 || answer > 6)
+			cout << "Error: " << answer << endl;
+	}
+	else
+		cout << "Incorrect!" << endl;
+}
